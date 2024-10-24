@@ -1,0 +1,9 @@
+meltano:
+  target: "{{ env_var('MELTANO_ENVIRONMENT', 'dev') }}"
+  outputs:
+    dev:
+      type: clickhouse
+    staging:
+      type: clickhouse
+    prod:
+      type: clickhouse
